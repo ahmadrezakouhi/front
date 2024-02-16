@@ -1,19 +1,18 @@
-import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
 import { Component } from '@angular/core';
-
+import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
- 
+  selector: 'app-dashboard',
+  templateUrl: './dashboard.component.html',
+  styleUrls: ['./dashboard.component.css'],
+
 })
-export class AppComponent {
-  todo = ['Get to work', 'Pick up groceries', 'Go home', 'Fall asleep'];
+export class DashboardComponent {
+  todo = ['test 1', 'test 2'];
 
-  done = ['Get up', 'Brush teeth', 'Take a shower', 'Check e-mail', 'Walk dog'];
+  done = ['test 3' , 'test 4' ];
 
-  running = ['sex','cdk-drop-list-1'];
+  running = ['test 5'];
 
   drop(event: CdkDragDrop<string[]>) {
     console.log(event.container.id)
